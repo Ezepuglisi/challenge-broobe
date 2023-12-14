@@ -80,7 +80,7 @@ const Register = () => {
                                     value: 5,
                                     message: 'El mínimo de caracteres es 5'
                                 }
-                            })} onChange={() => { errors.password = {} }} id='password' type='password' />
+                            })} onChange={() => { errors.password = {} }} id='password' type={showPassword ?'text' : 'password'} />
                             {errors?.password?.message && <p className='error'>{errors.password.message}</p>}
 
                         </div>
