@@ -42,7 +42,7 @@ const Login = () => {
           })}>
             {/* USUARIO */}
             <div>
-              <label htmlFor='username'>Email o usuario</label>
+              <label htmlFor='username'>Email</label>
               <input {...register('username', {
                 required: 'Este campo es obligatorio',
               })} onChange={() => { errors.username = {} }} id="user" type='text' />
