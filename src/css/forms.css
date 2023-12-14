@@ -65,7 +65,7 @@
     box-sizing: border-box;
 }
 
-.container-updateIssue div button{
+.container-updateIssue div button , .container-createIssue div button{
     height: 50px;
     border-radius: 10px;
     font-size: 18px;
@@ -86,7 +86,7 @@
 
 }
 
-.form div button, .container-createIssue div button{
+.form div button{
     background-color: #FF8C94;
     height: 50px;
     border-radius: 10px;
