@@ -1,0 +1,150 @@
+/* .form-component{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: red;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-component div{
+    display: flex;
+    flex-direction: column;
+} */
+
+.form-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Ajusta la altura al 100% del viewport height */
+}
+
+.form, .container-createIssue, .container-updateIssue{
+    /* padding: 10px; */
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 100%;
+    max-width: 700px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(122, 98, 140, 0.2) 0px 7px 16px;
+    /* border: 1px solid #5e3f80; */
+
+}
+
+.form div, .container-createIssue div, .container-updateIssue div{
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container-updateIssue div{
+    max-width: 440px;
+}
+
+.container-updateIssue .buttons{
+    flex-direction: row;
+}
+
+.form div label, .container-createIssue div label, .container-updateIssue div label  {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: rgb(65, 65, 109);
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 440px;
+}
+
+.form div input, .container-createIssue div input, .container-createIssue div select, .container-updateIssue div select, .container-updateIssue div input {
+    background-color: rgb(249, 246, 248);
+    /* border: 1px solid #5e3f80; */
+    outline: rgb(193, 168, 190) solid 1px;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 16px;
+    /* color: #FFF; */
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+    max-width: 440px;
+    box-sizing: border-box;
+    /* Ajusta el relleno del input según sea necesario */
+}
+
+.container-updateIssue div button{
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin:auto
+}
+
+.cancel-button{
+    background-color: #FF8C94;
+}
+
+.success-button{
+    background-color: #07bc0c;
+
+}
+
+.form div button, .container-createIssue div button{
+    background-color: #FF8C94;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+}
+
+.error{
+    width: 100%;
+    max-width: 440px;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 14px;
+    color:red;
+    font-weight: 500;
+}
+
+.title-register{
+    color: rgb(65, 65, 109);
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    max-width: 440px;
+    text-align: center;
+    line-height: 2.625rem;
+}
+
+.show-password{
+    width: 100%;
+    max-width: 440px;
+    text-align: right;
+}
+
+/*
+#A0D2EB
+#D0BDF4
+#8458B3
+#E5EAF5
+#494D5F
+*/

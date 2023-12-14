@@ -1,0 +1,121 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* #root{
+  height: 100dvh;
+} */
+
+
+#root{
+  background-color: rgb(244, 238, 243);
+  font-family:'Montserrat';
+  /* padding-left:10px;
+  padding-right: 10px; */
+}
+
+/*RESET CSS FOR INPUTS*/
+input, button{
+  all: unset;
+}
+
+select{
+  border: 0;
+}
+
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+svg{
+  cursor:pointer
+}
+
+/* svg path,
+svg rect{
+  fill: #FF8C94;
+} */
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF ; /* Agrega el color de fondo deseado */
+  padding: 30px;
+  width: 100vw; /* Ajusta el ancho al 100% de la ventana */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+  color: rgb(65, 65, 109);
+
+}
+
+.section-container {
+  /* height: calc(100vh - 2 * 10px); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  height: 100vh;
+  min-height: 100%;
+  overflow-y: auto;
+  overflow-x:hidden;
+  box-sizing: border-box; /* Incluye el padding en la altura total */
+}
+
+.btn-createnewissue, .btn-createnewissue-2{
+  text-decoration: none;
+  background-color: #FF8C94;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+  padding: 10px;
+  margin-top:20px
+}
+
+.btn-createnewissue-2{
+  width: 100%;
+}
+
+.btn-createnewissue:hover{
+  background-color: #fa7f88;
+}
+
+.no-issues{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+h3{
+  color:rgb(65, 65, 109);
+}
+
+.no-issues p{
+  color:rgb(65, 65, 109);
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.loader-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+
