@@ -34,7 +34,7 @@
     padding-right: 10px;
 }
 
-.container-updateIssue div{
+.container-updateIssue div, .container-createIssue div{
     max-width: 440px;
 }
 
