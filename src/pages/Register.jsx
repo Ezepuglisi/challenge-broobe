@@ -73,7 +73,7 @@ const Register = () => {
                         {/* CONTRASEÑA */}
 
                         <div>
-                            <label htmlFor='password'>Contraseña <span style={{ marginLeft: '5px' }} onClick={() => { setShowPassword(!showPassword) }}>{showPassword ? <FaRegEyeSlash /> : <FaRegEye />}</span> </label>
+                            <label htmlFor='password'>Contraseña <span style={{ marginLeft: '5px' }} onClick={() => { setShowPassword(!showPassword) }}>{showPassword ?<FaRegEye /> : <FaRegEyeSlash /> }</span> </label>
                             <input {...register('password', {
                                 required: 'Este campo es obligatorio',
                                 minLength: {
