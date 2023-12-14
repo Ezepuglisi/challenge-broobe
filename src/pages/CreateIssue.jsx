@@ -39,62 +39,63 @@ const CreateIssue = () => {
 
   return (
 
-      <section className='create-issueComponent'>
-        <Menu />
+    <section className='create-issueComponent'>
+      <Menu />
 
-        {/* {loadingCreateIssue && <Loader />} */}
-        {priorities.length > 0 && !loadingCreateIssue ?
-          <div className='container-createIssue'>
-            <div>
-              <label htmlFor='name-issue'>
-                Nombre del Issue
-              </label>
-              <input name='name-issue' value={nameIssue} onChange={(e) => setNameIssue(e.target.value)} />
-              {errorCreateIssue && nameIssue === '' && <p className='error'>Este campo es requerido</p>}
-              {errorCreateIssue && nameIssue.length > 100 && <p className='error'>El máximo de caracteres es 100</p>}
-            </div>
-            <div>
-              <label htmlFor='description'>
-                Descripción del Issue
-              </label>
-              <input name='description' value={description} onChange={(e) => setDescription(e.target.value)} />
-              {errorCreateIssue && description === '' && <p className='error'>Este campo es requerido</p>}
-              {errorCreateIssue && description.length > 100 && <p className='error'>El máximo de caracteres es 200</p>}
-
-            </div>
-            <div>
-              <label htmlFor='prioridad'>
-                Prioridad
-              </label>
-              <select onChange={(e) => setPriority(e.target.value)} value={priority || ''}>
-                <option value="" disabled hidden>Selecciona una opción</option>
-                {priorities?.map((element, index) => {
-                  return <option key={index} value={element.id}>{element.type}</option>
-                })}
-              </select>
-              {errorCreateIssue && priority === null && <p className='error'>Este campo es requerido</p>}
-
-            </div>
-            <div>
-              <button onClick={() => handleCreateNewIssue()}>Crear Issue</button>
-            </div>
+      {/* {loadingCreateIssue && <Loader />} */}
+      {priorities.length > 0 && !loadingCreateIssue ?
+        <div className='container-createIssue'>
+          <div>
+            <label htmlFor='name-issue'>
+              Nombre del Issue
+            </label>
+            <input name='name-issue' value={nameIssue} onChange={(e) => setNameIssue(e.target.value)} />
+            {errorCreateIssue && nameIssue === '' && <p className='error'>Este campo es requerido</p>}
+            {errorCreateIssue && nameIssue.length > 100 && <p className='error'>El máximo de caracteres es 100</p>}
           </div>
-          :
-          <Loader />
-        }
-        <ToastContainer
-          position="bottom-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
-      </section>
+          <div>
+            <label htmlFor='description'>
+              Descripción del Issue
+            </label>
+            <input name='description' value={description} onChange={(e) => setDescription(e.target.value)} />
+            {errorCreateIssue && description === '' && <p className='error'>Este campo es requerido</p>}
+            {errorCreateIssue && description.length > 100 && <p className='error'>El máximo de caracteres es 200</p>}
+
+          </div>
+          <div>
+            <label htmlFor='prioridad'>
+              Prioridad
+            </label>
+            <select onChange={(e) => setPriority(e.target.value)} value={priority || ''}>
+              <option value="" disabled hidden>Selecciona una opción</option>
+              {priorities?.map((element, index) => {
+                return <option key={index} value={element.id}>{element.type}</option>
+              })}
+            </select>
+            {errorCreateIssue && priority === null && <p className='error'>Este campo es requerido</p>}
+
+          </div>
+          <div className='buttons'>
+            <button className='success-button' onClick={() => handleCreateNewIssue()}>Crear Issue</button>
+            <button className='cancel-button' onClick={() => navigate('/')}>Cancelar</button>
+          </div>
+        </div>
+        :
+        <Loader />
+      }
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+    </section>
 
   )
 }
