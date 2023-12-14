@@ -1,18 +1,4 @@
-/* .form-component{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: red;
-    width: 100%;
-    max-width: 700px;
-    margin: auto;
-}
 
-.form-component div{
-    display: flex;
-    flex-direction: column;
-} */
 
 .form-component{
     display: flex;
@@ -22,11 +8,9 @@
     min-height: 100vh;
     padding-top:15px;
     padding-bottom:15px;
-    /* Ajusta la altura al 100% del viewport height */
 }
 
 .form, .container-createIssue, .container-updateIssue{
-    /* padding: 10px; */
     padding-top: 45px;
     padding-bottom: 45px;
     width: 100%;
@@ -37,7 +21,6 @@
     align-items: center;
     border-radius: 20px;
     box-shadow: rgba(122, 98, 140, 0.2) 0px 7px 16px;
-    /* border: 1px solid #5e3f80; */
 
 }
 
@@ -71,18 +54,15 @@
 
 .form div input, .container-createIssue div input, .container-createIssue div select, .container-updateIssue div select, .container-updateIssue div input {
     background-color: rgb(249, 246, 248);
-    /* border: 1px solid #5e3f80; */
     outline: rgb(193, 168, 190) solid 1px;
     border-radius: 10px;
     height: 50px;
     font-size: 16px;
-    /* color: #FFF; */
     padding-left: 8px;
     padding-right: 8px;
     width: 100%;
     max-width: 440px;
     box-sizing: border-box;
-    /* Ajusta el relleno del input según sea necesario */
 }
 
 .container-updateIssue div button{
@@ -143,10 +123,3 @@
     text-align: right;
 }
 
-/*
-#A0D2EB
-#D0BDF4
-#8458B3
-#E5EAF5
-#494D5F
-*/
