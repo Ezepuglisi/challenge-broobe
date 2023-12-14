@@ -7,10 +7,22 @@
   height: 100dvh;
 } */
 
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans'), url(PATH/TO/YOUR/OPEN_SANS_FONT.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Aplicar la fuente a elementos específicos o a todo el cuerpo del documento */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 
 #root{
   background-color: rgb(244, 238, 243);
-  font-family:'Montserrat';
+  /* font-family:'Open'; */
   /* padding-left:10px;
   padding-right: 10px; */
 }
