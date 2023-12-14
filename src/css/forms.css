@@ -21,7 +21,7 @@
     align-items: center;
     border-radius: 20px;
     box-shadow: rgba(122, 98, 140, 0.2) 0px 7px 16px;
-
+    margin:15px;
 }
 
 .form div, .container-createIssue div, .container-updateIssue div{
@@ -38,7 +38,7 @@
     max-width: 440px;
 }
 
-.container-updateIssue .buttons{
+.container-updateIssue .buttons, .container-createIssue .buttons{
     flex-direction: row;
 }
 
