@@ -68,7 +68,7 @@ const IssuesList = () => {
 
         {issues && issues.length === 0 && (
           <div className='no-issues'>
-            <h3>No tienes issues Creados</h3>
+            <h3>No tienes issues creados</h3>
             <p>Comienza a hacerlo para organizar mejor tu día 😀</p>
             <Link className='btn-createnewissue' to={'/createIssue'}>Crear un nuevo Issue</Link>
           </div>
